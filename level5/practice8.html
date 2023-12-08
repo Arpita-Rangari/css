@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        div{
+            height:70px;
+            width:70px;
+            background-color: red;
+            border: 5px solid black;
+            margin : 5px;
+
+        }
+        #div1{
+            position : static;
+        }
+        #div2{
+            position : relative;
+            top:20px;
+            left:90px;
+            /* from its original position it will moved  */
+        }
+          #div3{
+            position : fixed;
+            top:200px;
+            left:90px;
+            /*  */
+        }  #div4{
+            position : absolute;
+            top:200px;
+            left:20px;
+            /* starts from left corner */
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">static</div>
+    <div id="div2">relative</div>
+    <div id="div3">Fixed</div>
+    <div id="div4">Absolute</div>
+    <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>  <div id="div1">static</div>
+    <div id="div4">Absolute</div>    <div id="div4">Absolute</div>    <div id="div4">Absolute</div>
+</body>
+</html>
